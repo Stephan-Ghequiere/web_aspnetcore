@@ -1,5 +1,18 @@
 # Web Toolbox
 
+## 10.0.0
+- This version is compatible with the Digipolis toolbox errors_aspnetcore v5.3.0-maintenance.
+- The Digipolis toolbox errors_aspnetcore changed because of new API design guidelines: property ExtraInfo should be used instead of ExtraParameters in the Error model.
+
+## 9.2.1
+- when no port is found in request-url, no default port is used when building paged result links (previously port 80 was added by default)
+
+## 9.2.0
+
+- added PagingStrategy property to PageOptions and refactoring extension methods "ToPagedResult" to take strategy into account
+- refactoring extension methods "ToPagedResult" for PageSortOptions to reuse extension methods of parent class PageOptions
+- update unit tests
+
 ## 9.1.0
 
 - Removed unnecessary DeserializationPagedResult, JsonConvertor and ISchemaFilter: the same result can be achieved with simple inheritance.
